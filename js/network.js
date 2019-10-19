@@ -44,7 +44,7 @@ d3.json("./data/german-jewish-frankfurter-zeitung.json", function(error, graph) 
   simulation
     .force("charge_force", d3.forceManyBody().strength(-100))
     .force("center_force", d3.forceCenter(width / 2, height / 2))
-    .force("links", d3.forceLink(graph.links).id(function (d) { return d.id; }).distance([180])) // defines distance between the nodes
+    .force("links", d3.forceLink(graph.links).id(function (d) { return d.id; })) // defines distance between the nodes
     .force("collide", d3.forceCollide().radius(2));
 
   simulation
