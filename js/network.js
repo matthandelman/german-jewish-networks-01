@@ -18,11 +18,11 @@ d3.json("./data/german-jewish-frankfurter-zeitung.json", function(error, graph) 
   if (error) throw error;
 
   var svg = d3.select("body").append("svg")
-    .attr("width", 960)
-    .attr("height", 500);
+    .attr("width", 1400)
+    .attr("height", 1050);
 
-  var width = 960,
-      height = 500;
+  var width = 1400,
+      height = 1050;
 
   var simulation = d3.forceSimulation()
     .nodes(graph.nodes);
